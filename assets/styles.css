@@ -206,26 +206,42 @@ h1 {
 
 .steps {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1rem;
 }
 
 .step {
-  display: grid;
-  grid-template-columns: auto 1fr;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
   gap: 0.75rem;
-  align-items: start;
+}
+
+.step-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 .step-number {
   background: var(--accent);
   color: #fff;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   display: grid;
   place-items: center;
   font-weight: 700;
+  font-size: 1.05rem;
+  flex-shrink: 0;
+}
+
+.step-title {
+  margin: 0;
 }
 
 .note {
@@ -314,7 +330,7 @@ textarea {
   .hero-grid { grid-template-columns: 1.1fr 0.9fr; align-items: center; }
   .two-col { grid-template-columns: repeat(2, 1fr); }
   .cards { grid-template-columns: repeat(2, 1fr); }
-  .steps { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .steps { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
   .pricing-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .faq-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .contact-grid { grid-template-columns: 1.1fr 0.9fr; }
