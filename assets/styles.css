@@ -90,7 +90,7 @@ a:hover {
 }
 
 .hero {
-  padding: 4rem 0 3rem;
+  padding: 3.5rem 0 2.5rem;
 }
 
 .hero-grid {
@@ -173,39 +173,29 @@ h1 {
   font-weight: 700;
 }
 
-.feature-block {
+.feature-row {
   display: grid;
-  gap: 0.75rem;
   grid-template-columns: 1fr;
-  margin-top: 0.25rem;
+  gap: 1.25rem;
+  margin: 0 auto 0.5rem;
+  padding-top: 0.5rem;
 }
 
-.feature-card {
+.feature {
   display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: start;
-  gap: 0.75rem;
-  padding: 0.9rem 1rem;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: #fff;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.04);
+  gap: 0.35rem;
+  justify-items: center;
+  text-align: center;
 }
 
 .feature-icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
-  background: var(--accent-soft);
   color: var(--accent);
-  display: grid;
-  place-items: center;
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1;
 }
 
 .feature-title {
-  margin: 0 0 0.15rem;
+  margin: 0;
   font-weight: 800;
 }
 
@@ -364,9 +354,9 @@ textarea {
 @media (min-width: 720px) {
   .nav { display: flex; }
   .nav-toggle { display: none; }
-  .hero { padding: 5rem 0 4rem; }
+  .hero { padding: 4rem 0 3rem; }
   .hero-grid { grid-template-columns: 1.1fr 0.9fr; align-items: center; }
-  .feature-block { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+  .feature-row { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; align-items: start; }
   .two-col { grid-template-columns: repeat(2, 1fr); }
   .cards { grid-template-columns: repeat(2, 1fr); }
   .steps { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
