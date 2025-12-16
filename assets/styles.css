@@ -90,7 +90,7 @@ a:hover {
 }
 
 .hero {
-  padding: 3.5rem 0 2.5rem;
+  padding: 3.5rem 0 1.75rem;
 }
 
 .hero-grid {
@@ -173,37 +173,7 @@ h1 {
   font-weight: 700;
 }
 
-.feature-row {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.25rem;
-  margin: 0 auto 0.5rem;
-  padding-top: 0.5rem;
-}
 
-.feature {
-  display: grid;
-  gap: 0.35rem;
-  justify-items: center;
-  text-align: center;
-}
-
-.feature-icon {
-  color: var(--accent);
-  font-size: 1.5rem;
-  line-height: 1;
-}
-
-.feature-title {
-  margin: 0;
-  font-weight: 800;
-}
-
-.feature-copy {
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.98rem;
-}
 
 .card {
   background: var(--surface);
@@ -215,6 +185,10 @@ h1 {
 
 .section {
   padding: 3rem 0;
+}
+
+.hero + .section {
+  padding-top: 2.5rem;
 }
 
 .muted {
@@ -354,9 +328,8 @@ textarea {
 @media (min-width: 720px) {
   .nav { display: flex; }
   .nav-toggle { display: none; }
-  .hero { padding: 4rem 0 3rem; }
+  .hero { padding: 4rem 0 2.5rem; }
   .hero-grid { grid-template-columns: 1.1fr 0.9fr; align-items: center; }
-  .feature-row { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; align-items: start; }
   .two-col { grid-template-columns: repeat(2, 1fr); }
   .cards { grid-template-columns: repeat(2, 1fr); }
   .steps { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
