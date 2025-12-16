@@ -148,16 +148,12 @@ h1 {
   border: 1px solid var(--accent);
 }
 
-.cred-list, .pill-list, .checklist {
+.pill-list, .checklist {
   list-style: none;
   padding: 0;
   margin: 0;
   display: grid;
   gap: 0.4rem;
-}
-
-.cred-list {
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
 }
 
 .pill-list li {
@@ -175,6 +171,48 @@ h1 {
   color: var(--accent);
   margin-right: 0.5rem;
   font-weight: 700;
+}
+
+.feature-block {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: 1fr;
+  margin-top: 0.25rem;
+}
+
+.feature-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  gap: 0.75rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: #fff;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.04);
+}
+
+.feature-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  display: grid;
+  place-items: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.feature-title {
+  margin: 0 0 0.15rem;
+  font-weight: 800;
+}
+
+.feature-copy {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.98rem;
 }
 
 .card {
@@ -328,6 +366,7 @@ textarea {
   .nav-toggle { display: none; }
   .hero { padding: 5rem 0 4rem; }
   .hero-grid { grid-template-columns: 1.1fr 0.9fr; align-items: center; }
+  .feature-block { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
   .two-col { grid-template-columns: repeat(2, 1fr); }
   .cards { grid-template-columns: repeat(2, 1fr); }
   .steps { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
