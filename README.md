@@ -1,4 +1,4 @@
-# Dean Web Services - One Page Site
+# DG Web Services - One Page Site
 
 Fast, static one-page marketing site for a UK-focused web design service. Built with vanilla HTML/CSS/JS and ready to deploy on Netlify.
 
