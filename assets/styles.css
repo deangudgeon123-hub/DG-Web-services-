@@ -91,6 +91,7 @@ a:hover {
 }
 
 .nav-toggle {
+  margin-left: auto;
   background: transparent;
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -292,15 +293,6 @@ h1 {
   grid-template-columns: 1fr;
   gap: 1.5rem;
   align-items: start;
-}
-
-.contact-details {
-  margin-bottom: 1rem;
-  color: var(--muted);
-}
-
-.contact-details p {
-  margin: 0.25rem 0;
 }
 
 .form {
