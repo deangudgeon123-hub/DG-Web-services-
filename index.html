@@ -229,7 +229,7 @@
           <p>Phone: <a href="tel:+447934889138" aria-label="Call phone">07934 889138</a></p>
         </div>
         <div>
-          <form name="contact" method="POST" data-netlify="true" netlify data-netlify-honeypot="bot-field" class="card form">
+          <form name="contact" method="POST" action="/thanks.html" data-netlify="true" netlify data-netlify-honeypot="bot-field" class="card form">
             <input type="hidden" name="form-name" value="contact">
             <p class="hidden" aria-hidden="true">
               <label>Don’t fill this out if you’re human: <input type="text" name="bot-field" tabindex="-1" autocomplete="off"></label>
@@ -239,15 +239,6 @@
 
             <label for="email">Email</label>
             <input id="email" name="email" type="email" required>
-
-            <label for="business">Business name</label>
-            <input id="business" name="business" type="text" required>
-
-            <label for="website">Website URL</label>
-            <input id="website" name="website" type="url" placeholder="https://">
-
-            <label for="town">Town/Area</label>
-            <input id="town" name="town" type="text" required>
 
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="4" required></textarea>
