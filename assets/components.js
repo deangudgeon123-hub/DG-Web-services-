@@ -27,7 +27,7 @@
       <header class="site-header">
         <div class="container header-inner">
           <a href="index.html" class="brand-mark" aria-label="Stone & Anvil home">
-            <span class="brand-name">STONE & ANVIL</span>
+            <img src="assets/images/anvil-logo.jpg" alt="Stone & Anvil logo" class="brand-logo" loading="eager" decoding="async" />
             <span class="brand-tagline">Recycled Silver • Handcrafted Jewellery</span>
           </a>
           <nav class="site-nav" aria-label="Primary navigation">${links}</nav>
